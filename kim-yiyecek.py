@@ -84,7 +84,7 @@ turtle.onkey(turnright2,"d")
 
 
 while True:
- if score2 == 1:
+ if score2 == 10:
   finish.write("Player2 won!", False, align="left",font=("Arial",14,"normal"))
   break
  elif score1 == 10:
