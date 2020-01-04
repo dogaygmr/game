@@ -50,6 +50,12 @@ goal.setposition(random.randint(-270,270),random.randint(-270,270))
 #Set variables
 speed=3
 
+#finisher
+finish = turtle.Turtle()
+finish.color("black")
+finish.penup()
+finish.setposition(-50,0)
+finish.hideturtle()
 #Function defines
 
 def turnleft():
@@ -78,6 +84,12 @@ turtle.onkey(turnright2,"d")
 
 
 while True:
+ if score2 == 1:
+  finish.write("Player2 won!", False, align="left",font=("Arial",14,"normal"))
+  break
+ elif score1 == 10:
+  finish.write("Player1 won!", False, align="left",font=("Arial",14,"normal"))
+  break
  player.forward(speed)
  player2.forward(speed)
  #Boundary checking
